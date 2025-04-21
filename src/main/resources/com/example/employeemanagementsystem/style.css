@@ -1,0 +1,199 @@
+/* --- General --- */
+
+.rootss{
+  -fx-background-image: url("file:src/main/resources/background_nebula.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;}
+.root {
+    -fx-background-color: #f4f7f9;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 13px;
+}
+
+/* --- Labels --- */
+.label {
+    -fx-text-fill: #555;
+    -fx-font-size: 1em;
+}
+
+.section-label {
+
+
+    -fx-font-weight: bold;
+    -fx-padding: 8px 0 4px 0;
+    -fx-text-fill: #333; /* darker teal */
+    -fx-font-size: 14px;
+}
+
+/* --- Buttons --- */
+.button {
+    -fx-background-color: #6c757d;
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 18px;
+    -fx-font-size: 1em;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 4, 0, 0, 1);
+    -fx-transition: background-color 0.2s ease-in-out, -fx-effect 0.2s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: derive(#6c757d, -10%);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0, 0, 2);
+}
+
+.button:pressed {
+    -fx-background-color: derive(#6c757d, -20%);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 0, 0.5);
+}
+
+/* Primary action button (e.g., Add) */
+.primary-button {
+    -fx-background-color: #009688;
+}
+.primary-button:hover {
+    -fx-background-color: #00796b;
+}
+.primary-button:pressed {
+    -fx-background-color: #00695c;
+}
+
+/* Danger action button (e.g., Remove) */
+.danger-button {
+    -fx-background-color: #dc3545;
+}
+.danger-button:hover {
+    -fx-background-color: derive(#dc3545, -10%);
+}
+.danger-button:pressed {
+    -fx-background-color: derive(#dc3545, -20%);
+}
+
+/* Buttons in the right control panel */
+.control-button {
+    -fx-background-color: #009688;
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 18px;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 0, 0);
+}
+.control-button:hover {
+    -fx-background-color: #00796b;
+}
+.control-button:pressed {
+    -fx-background-color: #00695c;
+}
+
+/* --- Table View --- */
+.employee-table {
+    -fx-border-color: #d1d8de;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-selection-bar: #009688;
+    -fx-selection-bar-non-focused: #a0d5d0;
+}
+
+.employee-table .column-header-background {
+    -fx-background-color: #e9ecef;
+    -fx-background-radius: 5px 5px 0 0;
+    -fx-background-insets: 0;
+    -fx-padding: 8px 10px;
+}
+
+.employee-table .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent #d1d8de transparent transparent;
+    -fx-border-width: 0 1 0 0;
+}
+
+.employee-table .column-header .label {
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
+
+.employee-table .table-cell {
+    -fx-padding: 10px;
+    -fx-border-color: transparent #e1e5e8 transparent transparent;
+    -fx-border-width: 0 1 0 0;
+    -fx-text-fill: #212529;
+}
+
+.employee-table .table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #e1e5e8;
+}
+
+.employee-table .table-row-cell:odd {
+    -fx-background-color: #f8f9fa;
+}
+
+.employee-table .table-row-cell:hover {
+    -fx-background-color: #d9f3f1;
+}
+
+.employee-table .table-row-cell:selected {
+    -fx-background-color: -fx-selection-bar;
+}
+
+.employee-table .table-row-cell:selected .table-cell {
+    -fx-text-fill: white;
+}
+
+/* --- Input Fields --- */
+.text-field, .combo-box {
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #b2dfdb;
+    -fx-background-color: white;
+    -fx-font-size: 1em;
+    -fx-padding: 6px 10px;
+    -fx-prompt-text-fill: #a7a7a7;
+    -fx-highlight-fill: #a0d5d0;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #009688;
+    -fx-effect: dropshadow(gaussian, rgba(0, 150, 136, 0.3), 6, 0, 0, 1);
+}
+
+.combo-box .list-cell {
+    -fx-padding: 5px 10px;
+}
+
+.combo-box .list-cell:filled:hover {
+    -fx-background-color: #d9f3f1;
+}
+
+.combo-box .list-cell:filled:selected {
+    -fx-background-color: #009688;
+    -fx-text-fill: white;
+}
+
+/* --- Slider --- */
+.slider .track {
+    -fx-background-color: #dee2e6;
+    -fx-background-radius: 5px;
+    -fx-padding: 4px;
+}
+
+.slider .thumb {
+    -fx-background-color: #009688;
+    -fx-background-radius: 50%;
+    -fx-padding: 8px;
+}
+
+.slider:focused .thumb {
+    -fx-effect: dropshadow(gaussian, rgba(0, 150, 136, 0.3), 6, 0, 0, 2);
+}
+
+/* --- Separator --- */
+.separator .line {
+    -fx-border-color: #d1d8de;
+    -fx-border-width: 1 0 0 0;
+}

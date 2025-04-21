@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.employeemanagementsystem.controllers.LoginController"
+            prefWidth="350" prefHeight="400"
+            stylesheets="@login.css" fx:id="loginRoot"
+            styleClass="login-root">
+
+    <VBox spacing="20" alignment="CENTER" AnchorPane.topAnchor="40" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+        <Label text="Amalitech" styleClass="login-title"/>
+
+        <TextField fx:id="usernameField" promptText="Username" styleClass="login-field"/>
+        <PasswordField fx:id="passwordField" promptText="Password" styleClass="login-field"/>
+
+        <Button text="Login" onAction="#handleLogin" styleClass="login-button"/>
+        <Label fx:id="errorLabel" textFill="#e74c3c" styleClass="error-label"/>
+    </VBox>
+
+</AnchorPane>

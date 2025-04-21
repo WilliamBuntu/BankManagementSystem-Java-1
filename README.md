@@ -37,11 +37,11 @@ The project consists of the following key classes:
 - `Employee<T>`: Generic class representing an employee with various attributes
 - `EmployeeDatabase<T>`: Manages employee records using Collections
 - `EmployeeSalaryComparator<T>` and `EmployeePerformanceComparator<T>`: Custom comparators for sorting
-- `EmployeeManagementSystemApp`: JavaFX application for the user interface
+- `MainApplication`: JavaFX application for the user interface
 - `EmployeeManagementDemo`: Console-based demo showing all features without GUI
 
 ## How to Run
-
+- run `MainApplication` for the GUI application
 ### Prerequisites
 
 - Java Development Kit (JDK) 24 or higher
